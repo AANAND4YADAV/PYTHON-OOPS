@@ -17,15 +17,15 @@ A beginner-friendly project where I learn **Object-Oriented Programming in Pytho
 
 ---
 
-## 📁 What's Covered (Video 1)
+## 📁 What's Covered
+
+### Video 1 — Classes, Objects & Methods
 
 - Creating a **class** in Python
 - Using `__init__` to initialize object attributes
 - Defining and calling **methods**
 - Creating an **instance** of a class
 - Modifying object attributes via methods
-
-### Code Snippet
 
 ```python
 class Student(object):
@@ -37,6 +37,46 @@ class Student(object):
     def speak(self):
         print("Hi I am", self.name)
         print("Hi I am", self.age)
+```
+
+---
+
+### Video 2 — Inheritance
+
+- Understanding **parent** and **child** classes
+- Using `super()` to call the parent class constructor
+- **Overriding** methods in a child class
+- Extending parent functionality with new attributes and methods
+- The concept of **"is-a"** relationships in OOP
+
+```python
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        print(f"{self.name} makes a sound.")
+
+
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name)
+        self.breed = breed
+
+    def speak(self):                          # Method overriding
+        print(f"{self.name} says: Woof!")
+
+
+class Cat(Animal):
+    def speak(self):                          # Method overriding
+        print(f"{self.name} says: Meow!")
+
+
+dog = Dog("Rex", "Labrador")
+cat = Cat("Whiskers")
+
+dog.speak()   # Rex says: Woof!
+cat.speak()   # Whiskers says: Meow!
 ```
 
 ---
@@ -62,6 +102,7 @@ No external libraries needed — just plain Python!
 ## 🎯 Goal
 
 Complete all 6 videos and build a strong foundation in OOP concepts like:
+
 - Classes & Objects
 - Inheritance
 - Encapsulation
