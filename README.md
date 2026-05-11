@@ -9,7 +9,7 @@ A beginner-friendly project where I learn **Object-Oriented Programming in Pytho
 | Video | Topic | Status |
 |-------|-------|--------|
 | 1 | Classes, Objects & Methods | ✅ Done |
-| 2 | - | 🔜 Coming soon |
+| 2 | Inheritance | ✅ Done |
 | 3 | - | 🔜 Coming soon |
 | 4 | - | 🔜 Coming soon |
 | 5 | - | 🔜 Coming soon |
